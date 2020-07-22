@@ -1,0 +1,4 @@
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\LearningCPlusPlus\Beginner_CPP_Daniel_Ex\Debug\Beginner_CPP_Daniel_Ex.exe
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\LearningCPlusPlus\Beginner_CPP_Daniel_Ex\Debug\Beginner_CPP_Daniel_Ex.pdb
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Beginner_CPP_Daniel_Ex\Debug\Beginner_CPP_Daniel_Ex.exe
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Beginner_CPP_Daniel_Ex\Debug\Beginner_CPP_Daniel_Ex.pdb
