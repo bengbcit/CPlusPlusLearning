@@ -12,9 +12,9 @@ public:
 	Dog() { cout << "Dog born." << endl; }
 	
 	// without virtual fn
-	void bark() { cout << "Without Virtual: I am a just a dog. " << endl; }
+	void bark() { cout << "Without Virtual: I am a just a dog. " << endl; }				// called
 	// with virtual fn: ie dynamic binding
-	virtual void bark_virtual() { cout << "With Virtual: I am a just a dog" << endl; }
+	virtual void bark_virtual() { cout << "With Virtual: I am a just a dog" << endl; }	// not called
 	/*	bark(): without virtual
 		bark_virtual(): with virtual
 	*/ 
@@ -26,14 +26,14 @@ class yellowDog : public Dog {
 public:
 	yellowDog() { cout << "Yellow dog born." << endl; }
 	// without virtual fn
-	void bark() { cout << "Without Virtual: I am a yellow dog " << endl; }
+	void bark() { cout << "Without Virtual: I am a yellow dog " << endl; }				// not called
 	// with virtual fn
-	virtual void bark_virtual() { cout << "With Virtual:I am a yellow dog " << endl; }
+	virtual void bark_virtual() { cout << "With Virtual:I am a yellow dog " << endl; }	// called
 };
 
 int main()
 {
-	yellowDog d; // dynamic binding, it will call bark() in yellowDog
+	yellowDog d; // dynamic binding will call bark_virtual in yellowDog; ow call bark in Dog
 	d.seeCat();
 
 	return 0;

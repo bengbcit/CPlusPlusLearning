@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Advanced_CPP.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  castings.cpp
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\castings.cpp(80,6): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\castings.cpp(172,14): warning C4305: '=': truncation from 'int' to 'bool'
+  Advanced_CPP_Daniel_Ex.vcxproj -> I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.exe
