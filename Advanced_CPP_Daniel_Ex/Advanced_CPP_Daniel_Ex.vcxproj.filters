@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="castings.cpp">
+    <ClCompile Include="Assignment_Self_Assign_Operator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

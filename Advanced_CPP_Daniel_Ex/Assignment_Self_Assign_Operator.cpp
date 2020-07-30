@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-/* Self-Assignment*/
+/* Self-Assignment */
 
 /* Implemnting Assignment Operator */
 class collar {};
@@ -32,5 +32,5 @@ class cat {
 };
 int main() {
 	dog dog1;
-	
+	dog dog2;
 }
