@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assignment_Self_Assign_Operator.cpp">
+    <ClCompile Include="DisallowFN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
