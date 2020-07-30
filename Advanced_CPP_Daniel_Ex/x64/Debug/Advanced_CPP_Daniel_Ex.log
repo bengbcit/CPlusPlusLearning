@@ -1,5 +1,3 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Advanced_CPP.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  DisallowFN.cpp
-I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\DisallowFN.cpp(39,12): error C2040: 'f': 'OpenFile *' differs in levels of indirection from 'OpenFile_disallow'
-I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\DisallowFN.cpp(40,14): error C2039: 'destroyMe': is not a member of 'OpenFile_disallow'
-I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\DisallowFN.cpp(4): message : see declaration of 'OpenFile_disallow'
+  Extern.cpp
+  Advanced_CPP_Daniel_Ex.vcxproj -> I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.exe
