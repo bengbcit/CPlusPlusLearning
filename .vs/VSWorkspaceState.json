@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CPP11_Libaray"
+    "\\Advanced_CPP_Daniel_Ex",
+    "\\CPP11_Libaray",
+    "\\STL_Lib"
   ],
-  "SelectedNode": "\\CPP11_Libaray\\CPP11_Libaray.sln",
+  "SelectedNode": "\\Advanced_CPP_Daniel_Ex\\Variadic_template.cpp",
   "PreviewInSolutionExplorer": false
 }
