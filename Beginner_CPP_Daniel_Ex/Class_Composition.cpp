@@ -10,7 +10,7 @@ public:
 private:
 	int month, day, year;
 };
-// way 1 contructor in public call private member variables
+// way 1 constructor in public call private member variables
 Birthday::Birthday(int m, int d, int y)
 {
 	month = m;
@@ -31,7 +31,7 @@ private:
 	string name;
 	Birthday dateOfBirth;
 };
-// way 2 contructor in public call private member variables
+// way 2 constructor in public call private member variables
 People::People(string x, Birthday BO)
 	:name(x), dateOfBirth(BO)
 {

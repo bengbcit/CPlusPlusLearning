@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="HashTable.cpp">
+    <ClCompile Include="Alogorithm_SortedData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
