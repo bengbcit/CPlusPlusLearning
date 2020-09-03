@@ -36,6 +36,7 @@ int main() {
   int dayN;
   cout << "Enter a number between 0 to 6: ";
   cin >> dayN;
+  // getline(cin,dayN) same thing 
   cout<<"Day of week is "<< getDayofWeek(dayN);
   return 0;
 }

@@ -1,6 +1,8 @@
 #include<iostream>		// std::cout
 #include <vector>
 #include<algorithm>	
+#include<map>
+#include<set>
 using namespace std;
 
 /*	Sorted Data Algorithms
@@ -9,7 +11,7 @@ using namespace std;
  */
 
 void print_Iterator(vector<int> vec) {
-	for (vector<int>::const_iterator itr = vec.begin();itr != vec.end();++itr)
+	for (vector<int>::iterator itr = vec.begin();itr != vec.end();++itr)
 		cout << *itr << ' ';
 	cout << endl;
 }
@@ -64,43 +66,62 @@ void MergeEG() {
 void Set_Operation() {
 	// Both vec and vec3 should be sorted 
 	// The resulted data is also sorted
-	vector<int> vec = { 8,9,9,10 };
-	vector<int> vec2 = { 7,9,10 };
-	vector<int> vec_out(5);
-	sort(vec.begin(), vec.end());		// need to sort before use below alg. fns
-	sort(vec2.begin(), vec2.end());
+	vector<int> v1 = { 0,1,2,3,4,5 };
+	vector<int> v2 = { 4,5,6,7,8,9 };
+	vector<int> v3(12), v4(12), v5(12), v6(12);
+	vector<int>::iterator itr1, itr2, itr3,itr4;
 
-	// EG1: if X is in both vec and vec2, only one X is kept in vec_out
-	set_union(vec.begin(), vec.end(),			// Input Range #1
-			vec2.begin(), vec2.end(),			// input Range #2
-			vec_out.begin());					// Output 
-	print_Iterator(vec_out);					// vec_out: {7,8,9,9,10}
+	sort(v1.begin(), v1.end());		// need to sort before use below alg. fns
+	sort(v2.begin(), v2.end());
 
-	// EG2: Only the items that are in both vec and vec2 are saved in vec_out
-	vector<int> vec_out2(2);
-	set_intersection(vec.begin(), vec.end(),    // Input Range #1
-					vec2.begin(), vec2.end(),   // input Range #2
-					vec_out2.begin());          // Output 
-	print_Iterator(vec_out2);					// vec_out: {9,10,0,0,0}
+	// EG1: Union (v3) is X in both vec and vec2 
+	itr1 = set_union(v1.begin(), v1.end(),				// Input Range #1
+				v2.begin(), v2.end(),			// input Range #2
+				v3.begin());					// Output 
+	v3.resize(itr1 - v3.begin());				// ow v3: {0 1 2 3 4 5 6 7 8 9 0 0 }
+	print_Iterator(v3);							// v3: {0 1 2 3 6 7 8 9}
 
-	// EG3: Only the items that are in vec but not in vec2 are saved in vec_out
-	// The objects in the ranges [first1,last1) and [first2,last2)are accessed.
-	vector<int> vec_out3(7);
-	vector<int>::iterator itr;
-	itr = set_difference(vec.begin(), vec.end(),// Input Range #1
-				vec2.begin(), vec2.end(),		// input Range #2
-				vec_out3.begin());              // Output 
-	vec_out3.resize(itr - vec_out3.begin()-1);	// ow give {8,9}
-	print_Iterator(vec_out3);					// vec_out: {8}
+	// EG2: Intersection (v4) are intersected numbers
+	itr2 = set_intersection(v1.begin(), v1.end(),		// Input Range #1
+					v2.begin(), v2.end(),		// input Range #2
+					v4.begin());				// Output 
+	v4.resize(itr2 - v4.begin());				// ow v3: {4 5 0 0 0 0 0 0 0 0 0 0 }
+	print_Iterator(v4);							// vec_out: {4 5}
 
-	// EG4: vec_out has items from either vec or vec2, but not from both
-	vector<int> vec_out4(5);
-	vector<int>::iterator itr2;
-	itr2= set_symmetric_difference(vec.begin(), vec.end(),// Input Range #1
-		vec2.begin(), vec2.end(),						// input Range #2
-		vec_out4.begin());								// Output 
-	vec_out4.resize(itr2 - vec_out4.begin() - 1);		// vec_out: {7,8,0,0,0}
-	print_Iterator(vec_out4);							// vec_out: {7,8}
+	// EG3: Only the items that are in v1 but not in vec2 
+	itr3 = set_difference(v1.begin(), v1.end(),	// Input Range #1
+					v2.begin(), v2.end(),		// input Range #2
+					v5.begin());				// Output 
+	v5.resize(itr3 - v5.begin());				// 
+	print_Iterator(v5);							// vec_out: {0 1 2 3}
+
+	// EG4: items from either vec or vec2
+	itr4= set_symmetric_difference(v1.begin(), v1.end(),// Input Range #1
+					v2.begin(), v2.end(),		// input Range #2
+					v6.begin());				// Output 
+	v6.resize(itr4 - v6.begin() );				
+	print_Iterator(v6);							// vec_out: {0 1 2 3 6 7 8 9}
+
+	/*	set purpose has almost exact same anwser
+	*	Be aware: cant use back_inserter for set
+	set<int> s1 = { 0, 1, 2,3,4,5 };
+	...
+	set_union ( s1.begin(),s1.end(),s2.begin(),s2.end(),inserter(s3,s3.end()) );
+	set_intersection...
+	set_difference
+	set_symmetric_difference
+
+	*/
+
+	
+	//map<int, int> m1 = { {1,1},{2,2}, {3,3} };
+	//map<int, int> m2 = { {1,2},{2,4}, {3,3} };
+	//map<int, int> m3 , m4, m5 , m6;
+	//
+	//map<int,int>::iterator itr_m1, itr_m2, itr_m3, itr_m4;
+	//itr_m1 = set_union(m1.begin(), m1.end(), m2.begin(), m2.end(), inserter(m3, m3.end()));
+	
+	
 
 }
 int main() {
