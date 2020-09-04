@@ -1,3 +1,4 @@
+#include<iostream>
 #include<fstream>	// high lvl file stream input/output operation
 #include<thread>
 #include<string>
@@ -6,15 +7,16 @@
 using namespace std;
 
 class LogFile {
-	std::mutex m_mutex;	// protected by mutex
+	mutex m_mutex;	// protected by mutex
 	ofstream f;
 public:
 	LogFile() {
 		f.open("log.txt");
 	} // Need destructor to close file
 	void shared_print(string id, int value) {
-		std::lock_guard<mutex> locker(m_mutex);		// use lock guard to protect access of f not float exceptions
-		f << "From " << id << ": " << value << endl;
+		lock_guard<mutex> locker(m_mutex);	// use lock guard to protect access of f not float exceptions
+		cout << "From " << id <<			// order of lines may vary, but cout printouts are never mixed
+			": " << value << endl;
 	}
 	/* Never leak f to outside world, like this:
 	1. ofstream& getStream() { return f; }   ---> user can access it without going thru mutex

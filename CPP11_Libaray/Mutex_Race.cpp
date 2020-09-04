@@ -7,7 +7,7 @@ using namespace std;
 mutex mu;
 
 void shared_print(string msg, int id){
-	lock_guard<mutex> guard(mutex);	// RAII, if flats exception, will be unlocked
+	lock_guard<mutex> guard(mutex);	// RAII, if floats exception, will be unlocked
 	//mu.lock();					// without it will not print msg
 	cout << msg << id << endl;		// synchorinized with mutex mu
 									// AWARE: if cout here floats exception, mutex will continue being locked
