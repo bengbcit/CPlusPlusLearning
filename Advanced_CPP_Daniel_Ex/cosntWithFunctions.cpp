@@ -9,7 +9,7 @@ class Dog{
 public:
 	Dog() { age = 3;name = "Dummy"; }
 	// const parameters
-	void setAge(int& a) { age = a; a++; }		// overload the next line; you can modify 'b', it becomes inc by 1;
+	void setAge(int& a) { age = a; a++; }		// overload the next line; you can modify 'a', it becomes inc by 1;
 	void setAge(const int& a) { age = a; }		// you cant modify 'a' cuz const
 
 	// const return value

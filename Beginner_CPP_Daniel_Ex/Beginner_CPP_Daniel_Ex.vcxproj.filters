@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Recursion.cpp">
+    <ClCompile Include="StringStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

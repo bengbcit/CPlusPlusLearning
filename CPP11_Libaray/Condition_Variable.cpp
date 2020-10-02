@@ -6,7 +6,9 @@
 #include <string>
 #include <mutex>
 using namespace std;
-
+/* condition variable 
+*		- is to synchronize the excution order of flags
+*/
 /*Synchornize Issue: using mutex alone cant solve it*/
 deque<int> q;	// global var: deque of integer
 mutex mu;

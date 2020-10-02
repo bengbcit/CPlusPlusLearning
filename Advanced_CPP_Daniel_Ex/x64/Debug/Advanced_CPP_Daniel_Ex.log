@@ -1,3 +1,4 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Advanced_CPP.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Extern.cpp
+  Char_Conv.cpp
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\UserInputCheck.h(40): warning C4715: 'isdigit_fn': not all control paths return a value
   Advanced_CPP_Daniel_Ex.vcxproj -> I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.exe
