@@ -1,2 +1,2 @@
-I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP.exe
-I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP.pdb
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Hackerrank.exe
+I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Hackerrank.pdb

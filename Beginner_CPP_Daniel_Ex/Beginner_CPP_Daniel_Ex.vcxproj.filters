@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StringStream.cpp">
+    <ClCompile Include="HackRank_Easy_A.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

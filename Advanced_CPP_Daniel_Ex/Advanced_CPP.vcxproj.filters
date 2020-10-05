@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clone_fn.cpp">
+    <ClCompile Include="Hackerrank_Medium.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

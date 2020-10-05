@@ -18,5 +18,8 @@
     <ClCompile Include="Char_Conv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Overloading__Operator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

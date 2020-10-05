@@ -22,7 +22,7 @@
     <ClInclude Include="UserInputCheck.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="clone_fn.cpp" />
+    <ClCompile Include="Hackerrank_Medium.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -30,7 +30,7 @@
     <ProjectGuid>{1bbda103-f353-44ef-b1e2-dbe6633da917}</ProjectGuid>
     <RootNamespace>AdvancedCPP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Advanced_CPP</ProjectName>
+    <ProjectName>Hackerrank</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
