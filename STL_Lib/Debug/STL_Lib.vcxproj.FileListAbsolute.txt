@@ -1,2 +1,4 @@
 I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\Debug\STL_Lib.exe
 I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\Debug\STL_Lib.pdb
+D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\Debug\STL_Lib.exe
+D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\Debug\STL_Lib.pdb

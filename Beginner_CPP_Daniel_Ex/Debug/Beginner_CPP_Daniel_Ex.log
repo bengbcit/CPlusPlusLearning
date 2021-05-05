@@ -1,1 +1,5 @@
-﻿  Beginner_CPP_Daniel_Ex.vcxproj -> I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Beginner_CPP_Daniel_Ex\Debug\Beginner_CPP_Daniel_Ex.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1069,5): warning MSB8027: 名为 temp.cpp 的两个或更多文件将生成到同一位置的输出。这会导致错误的生成结果。   调用的文件是 Debug\temp.cpp, temp.cpp。
+  temp.cpp
+D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Beginner_CPP_Daniel_Ex\temp.cpp(5,35): warning C4305: “初始化”: 从“double”到“float”截断
+Debug\temp.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
+  Beginner_CPP_Daniel_Ex.vcxproj -> D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Beginner_CPP_Daniel_Ex\Debug\Beginner_CPP_Daniel_Ex.exe

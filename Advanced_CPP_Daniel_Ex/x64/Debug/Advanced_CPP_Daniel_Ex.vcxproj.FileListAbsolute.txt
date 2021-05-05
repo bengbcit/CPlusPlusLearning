@@ -1,2 +1,4 @@
 I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.exe
 I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.pdb
+D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.exe
+D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\Advanced_CPP_Daniel_Ex\x64\Debug\Advanced_CPP_Daniel_Ex.pdb

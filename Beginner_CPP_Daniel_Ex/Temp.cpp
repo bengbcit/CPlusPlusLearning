@@ -1,16 +1,8 @@
 #include<iostream>
-#include <string>
-#include <sstream>
 using namespace std;
 
-int main()
-{
-	string str;
-	stringstream mystr;
-
-	mystr << 'A'; mystr >> str;
-
-	cout << "The string obtained by converting single character : " << str;
-
+int main() {
+	float aryFloat[4] = { 22.3, 21.9 };
+	cout << aryFloat[0] << " " << aryFloat[2] << " " << aryFloat[3];
 	return 0;
 }

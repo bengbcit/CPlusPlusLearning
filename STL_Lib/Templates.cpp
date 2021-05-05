@@ -1,59 +1,72 @@
-/*	Introduction to Template: may cuz code bloat if template fn on a lot of diff data types
-*	USE WHEN:
-*		1. avoid duplicate situation eg, create int , float , long similar fns
-*		2. 
-*		3.
-*/
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 
-// fn template
-template <typename T>
-T square(T x) { 
-	return x * x;
-}
+/************** Function Template *****************/
+//template <class T>
+//T Comparison(T a, T b) {
+//	return (a > b) ? a : b;
+//}
+//
+//int main() {
+//
+//	cout << "Compare two integers." << endl;
+//	int ia = 9, ib = 12;
+//	cout << "The larger integer is " << Comparison(ia, ib) << endl;
+//	
+//	cout << "Compare two float numbers." << endl;
+//	float fa = 19.02, fb = 12.22;
+//	cout << "The larger float number is " << Comparison(fa, fb) << endl;
+//
+//	cout << "Compare two chars." << endl;
+//	char ca = 'a', cb = 'y';
+//	cout << "The larger char is " << Comparison(ca, cb) << endl;
+//
+//	return 0;
+//}
 
-// class template
-template<typename T>
-class BoVector {
-	T arr[1000];
-	int size;
+/************** Class Template *****************/
+template <class T>
+class Calculator
+{
+private:
+	T num1, num2;
+
 public:
-	BoVector():size(0) {}						// default ctor initialize private member size to 0
-	void push(T x) { arr[size] = x; size++; }
-	T get(int i) const { return arr[i]; }
-	int getSize() const { return size; }		// retrun current size
-	//void print() const {for(int i=0; i<size; i++) {cout << arr[i] << endl;}}
-	void print() const {
-		const int* p = arr;
-		for (int i = 0; i < size; i++) { cout << *(p++) << endl; }
+	Calculator(T n1, T n2)
+	{
+		num1 = n1;
+		num2 = n2;
 	}
+
+	void displayResult()
+	{
+		cout << "Numbers are: " << num1 << " and " << num2 << "." << endl;
+		cout << "Addition is: " << add() << endl;
+		cout << "Subtraction is: " << subtract() << endl;
+		cout << "Product is: " << multiply() << endl;
+		cout << "Division is: " << divide() << endl;
+	}
+
+	T add() { return num1 + num2; }
+
+	T subtract() { return num1 - num2; }
+
+	T multiply() { return num1 * num2; }
+
+	T divide() { return num1 / num2; }
 };
 
-// vector template: define operator multiply
-template<typename T>
-BoVector<T> operator*(const BoVector<T>& rhs1, BoVector<T>& rhs2) {
-	BoVector<T> ret;							// declare a new vector for multiple result
-	for (int i = 0; i < rhs1.getSize(); i++) {
-		ret.push(rhs1.get(i) * rhs2.get(i));	// make a new (ie mutiple) vector  
-	}
-	return ret;
-}
+int main()
+{
+	Calculator<int> intCalc(2, 1);
+	Calculator<float> floatCalc(2.4, 1.2);
 
-int main(){
-	//cout << square<int>(5) << endl;
-	//
-	//cout << square<double>(5.5) << endl;	// template dont have to specifically the data type
-	//cout << square(5.5) << endl;			// same result as above eg
+	cout << "Int results:" << endl;
+	intCalc.displayResult();
 
-	BoVector<int> bv;
-	bv.push(2);
-	bv.push(5);
-	bv.push(8);
-	bv.push(9);
-	//bv.print();
-	
-	cout << "Print squared bv: " << endl;
-	bv = square(bv);						// pass template obj. to template fn 
-	bv.print();
+	cout << endl << "Float results:" << endl;
+	floatCalc.displayResult();
+
+	return 0;
 }

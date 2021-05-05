@@ -1,2 +1,3 @@
-﻿  Traversing_Create_Linked_list.c
-  STL_Lib.vcxproj -> I:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\Debug\STL_Lib.exe
+﻿  LeetCode_346_MovAvgFromDataStream.cpp
+D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\LeetCode_346_MovAvgFromDataStream.cpp(27,16): warning C4018: “>=”: 有符号/无符号不匹配
+  STL_Lib.vcxproj -> D:\Program Files (x86)\GitHubDesktop\GitHub Repository\CPlusPlusLearning\STL_Lib\Debug\STL_Lib.exe
